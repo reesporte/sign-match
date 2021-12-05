@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body {
+        background-color: black;
+        color: white;
+        font-family: sans-serif;
+    }
+    </style>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            sign match
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <script>
+        function is_match() {
+        document.getElementById("match-status").innerHTML = "Match Status: Who knows! Your birthday really has nothing to do with it";
+    }
+    function reset_match() {
+        document.getElementById("match-status").innerHTML = "Match Status: ???????";
+    }
+    </script>
+    <body>
+        <div style="text-align: center;">
+            <h1>
+                🔮  💫   🔮   ✨
+            </h1>
+            <h2>
+                are they ur perfect match?????? check right now!
+            </h2>
+            <h4 id="match-status">
+                Match Status: ???????
+            </h4>
+            <p>
+                <form action="is_match()">
+                    <label for="person1">
+                        Your sign:
+                    </label>
+                    <select name="person1" id="person1">
+                        <option value="Aries">
+                            Aries
+                        </option>
+                        <option value="Taurus">
+                            Taurus
+                        </option>
+                        <option value="Gemini">
+                            Gemini
+                        </option>
+                        <option value="Cancer">
+                            Cancer
+                        </option>
+                        <option value="Leo">
+                            Leo
+                        </option>
+                        <option value="Virgo">
+                            Virgo
+                        </option>
+                        <option value="Libra">
+                            Libra
+                        </option>
+                        <option value="Scorpio">
+                            Scorpio
+                        </option>
+                        <option value="Sagittarius">
+                            Sagittarius
+                        </option>
+                        <option value="Capricorn">
+                            Capricorn
+                        </option>
+                        <option value="Aquarius">
+                            Aquarius
+                        </option>
+                        <option value="Pisces">
+                            Pisces
+                        </option>
+                    </select>
+                    <label for="person2">
+                        Their sign:
+                    </label>
+                    <select name="person2" id="person2">
+                        <option value="Aries">
+                            Aries
+                        </option>
+                        <option value="Taurus">
+                            Taurus
+                        </option>
+                        <option value="Gemini">
+                            Gemini
+                        </option>
+                        <option value="Cancer">
+                            Cancer
+                        </option>
+                        <option value="Leo">
+                            Leo
+                        </option>
+                        <option value="Virgo">
+                            Virgo
+                        </option>
+                        <option value="Libra">
+                            Libra
+                        </option>
+                        <option value="Scorpio">
+                            Scorpio
+                        </option>
+                        <option value="Sagittarius">
+                            Sagittarius
+                        </option>
+                        <option value="Capricorn">
+                            Capricorn
+                        </option>
+                        <option value="Aquarius">
+                            Aquarius
+                        </option>
+                        <option value="Pisces">
+                            Pisces
+                        </option>
+                    </select>
+                </form>
+                <br>
+                <button onclick="is_match()">
+                    check for a match!
+                </button>
+                <button onclick="reset_match()">
+                    reset
+                </button>
+            </p>
+        </div>
+    </body>
+</html>
